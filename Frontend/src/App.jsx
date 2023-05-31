@@ -10,6 +10,7 @@ import {
   BestSellingPage,
   EventsPage,
   FAQPage,
+  NotFound,
 } from "../routes";
 import "./App.css";
 import {
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
       <Route path="/best-selling" element={<BestSellingPage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/faq" element={<FAQPage />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
